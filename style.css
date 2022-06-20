@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[placeholder] {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #202020;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(209, 209, 209);
+}
+
+.header__input {
+  border: none;
+  outline: none;
+  min-width: 400px;
+  padding: 13px 5px;
+}
+
+.header__btn {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #11b7d9;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  padding: 13px 13px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.header__btn:hover {
+  background-color: #0c8ea8;
+}
+
+.main__inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.main__todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b6b4b6;
+  padding-bottom: 15px;
+}
+
+.main__counter {
+  border: 2px solid #202020;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 14px;
+  font-weight: 700;
+}
+
+.todo-list {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-list-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.todo-list-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.todo-list-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.todo-list-checkbox:checked + label::before {
+  background-color: #3db1c8;
+  box-shadow: 0px 0px 0px 2px #3db1c8;
+}
+
+.todo-list-btn {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #202020;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.todo-list-btn:hover {
+  background-color: #383838;
+}
+
+.main__todo__done {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #b6b4b6;
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+
+.todo-list-done {
+  margin-top: 40px;
+  opacity: 0.3;
+}
